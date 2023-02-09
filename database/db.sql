@@ -1,0 +1,12 @@
+CREATE DATABASE productsdb;
+
+use productsdb;
+
+
+CREATE TABLE products (
+    id INT NOT NULL AUT_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(400) NOT NULL,
+    price DECIMAL,
+    createdAT TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
